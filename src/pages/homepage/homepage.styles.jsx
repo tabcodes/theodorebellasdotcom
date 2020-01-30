@@ -15,4 +15,8 @@ export const Greeting = styled.p`
   &.how::before {
     content: "How?"
   }
+
+  &.contact::before {
+    content: "Contact"
+  }
 `;
