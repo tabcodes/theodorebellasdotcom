@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const DescriptionBox = styled.div`
   margin-left: 15%;
   font-size: 30px;
@@ -21,6 +20,7 @@ export const DescriptionBox = styled.div`
     &.clicked {
       color: #a72f2f;
       opacity: 100%;
+      cursor: default;
       ::after {
           content: "\\2713"
       }
@@ -28,6 +28,27 @@ export const DescriptionBox = styled.div`
 
 `;
 
+export const HeadlineBox = styled.div`
+  margin-left: 10%;
+  transition: display 1s;
+
+  .icon {
+    margin-right: 15px;
+  }
+
+  .mono {
+    padding: 10px;
+  }
+
+  p {
+      text-indent: 60px;
+
+      ::before {
+          content: "\\2014";
+          margin-right: 5px;
+      }
+  }
+`;
 
 export const DescMessage = styled.p`
   font-size: 20px;
