@@ -10,6 +10,7 @@ export const HeaderContainer = styled.div`
 
 export const LogoContainer = styled(Link)`
   height: 100%;
+  width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,8 +20,9 @@ export const LogoContainer = styled(Link)`
   &:hover {
     transform: scale(1.04);
     opacity: 0.95;
-    
-    & .name-container, p {
+
+    & .name-container,
+    p {
     }
   }
 `;
@@ -49,19 +51,20 @@ export const NameTextContainer = styled.div`
 
   & .job-title {
     font-size: 17px;
-    text-align:center;
+    text-align: center;
   }
 `;
 
 export const NavigationContainer = styled.div`
-  width: 50%;
+  width: 75%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 `;
 
-export const NavigationLink = styled.button`
+export const NavigationLink = styled(Link)`
+text-decoration: none;
 background-color: transparent;
 color: #3b3a3a;
 font-weight: bold;

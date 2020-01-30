@@ -10,6 +10,8 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/who" />
+
       </Switch>
     </div>
   );

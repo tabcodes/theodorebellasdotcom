@@ -23,9 +23,9 @@ const Header = () => {
         </NameTextContainer>
       </LogoContainer>
       <NavigationContainer>
-        <NavigationLink>Who</NavigationLink>
-        <NavigationLink>What</NavigationLink>
-        <NavigationLink>How</NavigationLink>
+        <NavigationLink to="/">Who?</NavigationLink>
+        <NavigationLink to="/how">How?</NavigationLink>
+        <NavigationLink to="/contact">Contact</NavigationLink>
       </NavigationContainer>
     </HeaderContainer>
   );
