@@ -10,7 +10,7 @@ export const DescriptionBox = styled.div`
     font-size:25px;
     opacity: 60%;
     color: black;
-    transition: all 500ms;
+    transition: all 1s;
     &:hover {
       opacity: 100%;
       color: #b96e6e;
@@ -30,7 +30,6 @@ export const DescriptionBox = styled.div`
 
 export const HeadlineBox = styled.div`
   margin-left: 10%;
-  transition: display 1s;
 
   .icon {
     margin-right: 15px;
