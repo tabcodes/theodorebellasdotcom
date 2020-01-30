@@ -51,7 +51,7 @@ export const HeadlineBox = styled.div`
 `;
 
 export const DescMessage = styled.p`
-  font-size: 20px;
+  font-size: 15px;
 
   ::after {
     content: "* Choose your preferred nomenclature as applicable.";

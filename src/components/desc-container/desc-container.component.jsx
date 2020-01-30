@@ -19,7 +19,7 @@ class DescriptionContainer extends Component {
           clickText: "write code",
           header: "clean, consistent, reliable.",
           description:
-            "code written like someone else will be reading it someday.",
+            "maintainable code written for maximum extensibility and reusability.",
           icon: faCode
         },
         {
@@ -106,6 +106,7 @@ const HeadlineContainer = ({ headline }) => {
         <span dangerouslySetInnerHTML={{ __html: headline.header }}></span>
       </h2>
       <p>{headline.description}</p>
+
     </HeadlineBox>
   );
 };
