@@ -1,19 +1,11 @@
 import styled from "styled-components";
 
 export const Greeting = styled.p`
-  font-size: 72px;
+  font-size: 50px;
   margin-left: 15%;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   padding: 0px;
-`;
-
-
-
-
-export const DescFooter = styled.p`
-  font-size: 20px;
-
-  ::after {
-    content: "* Choose your preferred nomenclature as applicable.";
+  ::before {
+    content: "Need something built?"
   }
 `;

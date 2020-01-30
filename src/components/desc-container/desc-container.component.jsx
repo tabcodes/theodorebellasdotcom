@@ -42,13 +42,13 @@ class DescriptionContainer extends Component {
 
   setSelection(index, disableInterval) {
     if (index !== this.state.clickedIndex) {
-        if(index > 2) {
-            index = 0;
-        }
+      if (index > 2) {
+        index = 0;
+      }
       this.setState({ clickedIndex: index });
     }
-    if(disableInterval) {
-        clearInterval(this.interval);
+    if (disableInterval) {
+      clearInterval(this.interval);
     }
   }
 
@@ -60,7 +60,7 @@ class DescriptionContainer extends Component {
   }
 
   componentWillUnmount() {
-      clearInterval(this.interval);
+    clearInterval(this.interval);
   }
 
   render() {
@@ -106,7 +106,6 @@ const HeadlineContainer = ({ headline }) => {
         <span dangerouslySetInnerHTML={{ __html: headline.header }}></span>
       </h2>
       <p>{headline.description}</p>
-
     </HeadlineBox>
   );
 };

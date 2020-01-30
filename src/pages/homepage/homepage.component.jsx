@@ -7,7 +7,7 @@ import DescriptionContainer from "../../components/desc-container/desc-container
 
 const HomePage = () => (
   <div className="home-container">
-    <Greeting>Hi.</Greeting>
+    <Greeting/>
     <DescriptionContainer />
   </div>
 );
