@@ -9,9 +9,13 @@ const ContactPage = () => {
 
       <p style={{ marginLeft: "15%", fontSize: "25px" }}>
         You can contact me via email at{" "}
-        <span class="mono">&lt;my first name&gt;.&lt;my last name&gt;</span>@gmail.com (take that, robot spam!)
+        <span class="mono">&lt;my first name&gt;.&lt;my last name&gt;</span>
+        @gmail.com (take that, robot spam!)
       </p>
-      <p style={{ marginLeft: "15%", fontSize: "25px" }}>Include the subject "Website Inquiry" in your email- <b>all others will be discarded!</b></p>
+      <p style={{ marginLeft: "15%", fontSize: "25px" }}>
+        Include the subject "Website Inquiry" in your email-{" "}
+        <b>all other inquiries to this address will be discarded!</b>
+      </p>
     </div>
   );
 };
