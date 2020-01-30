@@ -1,13 +1,10 @@
 import React, { Component } from "react";
-import {
-  DescriptionBox,
-  DescMessage,
-  HeadlineBox
-} from "./desc-container.styles";
+import { DescriptionBox, DescMessage } from "./desc-container.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee, faCode, faServer } from "@fortawesome/free-solid-svg-icons";
-
 import DescItem from "../desc-item/desc-item.component";
+import { HeadlineContainer } from "../headline-container/headline-container.component";
+
 class DescriptionContainer extends Component {
   constructor(props, context) {
     super(props, context);
@@ -95,18 +92,4 @@ class DescriptionContainer extends Component {
   }
 }
 
-const HeadlineContainer = ({ headline }) => {
-  if (!headline) {
-    return null;
-  }
-  return (
-    <HeadlineBox>
-      <h2>
-        <FontAwesomeIcon className="icon" icon={headline.icon} />
-        <span dangerouslySetInnerHTML={{ __html: headline.header }}></span>
-      </h2>
-      <p>{headline.description}</p>
-    </HeadlineBox>
-  );
-};
 export default DescriptionContainer;

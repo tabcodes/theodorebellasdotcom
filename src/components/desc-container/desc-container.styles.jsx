@@ -28,27 +28,6 @@ export const DescriptionBox = styled.div`
 
 `;
 
-export const HeadlineBox = styled.div`
-  margin-left: 10%;
-
-  .icon {
-    margin-right: 15px;
-  }
-
-  .mono {
-    padding: 10px;
-  }
-
-  p {
-      text-indent: 60px;
-
-      ::before {
-          content: "\\2014";
-          margin-right: 5px;
-      }
-  }
-`;
-
 export const DescMessage = styled.p`
   font-size: 15px;
 
