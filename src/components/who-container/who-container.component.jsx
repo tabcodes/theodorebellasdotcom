@@ -6,22 +6,26 @@ class WhoContainer extends Component {
     return (
       <div class="who-container">
         <WhoDesc>
-          <p><span>Short answer:</span></p>
-
-          <p className="indent">
-            I'm a software developer.
+          <p>
+            <span>Short answer:</span>
           </p>
-          <p><span>Much, much longer answer:</span></p>
+
+          <p className="indent">I'm a software developer.</p>
+          <p>
+            <span>Much, much longer answer:</span>
+          </p>
           <p className="indent">
             I'm a web developer/software engineer/Linux geek. I've spent the
             better part of the last decade working in various engineering roles,
             taking care of everything from minor hotfixes to high-level product
             development & deployment(s). I've worked in various industries,
             including managed hosting and data management services, and created
-            various integrations with third-party products you've probably used
-            at one point or another.
+            integrations with third-party products you've probably used at one
+            point or another.
           </p>
-          <p><span>Some of the things I've done include:</span></p>
+          <p>
+            <span>Some of the things I've worked on include:</span>
+          </p>
           <ul>
             <li>
               Developing integrations with enterprise products in the realms of
@@ -29,9 +33,9 @@ class WhoContainer extends Component {
               reporting, and backup management.
             </li>
             <li>
-              Creating, maintaining, and deploying REST APIs for various purposes,
-              including service monitoring, logging, and secure payment
-              processing.
+              Creating, maintaining, and deploying REST APIs for various
+              purposes, including service monitoring, logging, and secure
+              payment processing.
             </li>
             <li>
               Participating in roadmap planning and development of new
@@ -49,7 +53,9 @@ class WhoContainer extends Component {
             </li>
           </ul>
 
-          <p><span>Some other stuff I have some experience in:</span></p>
+          <p>
+            <span>Some other stuff I have some experience in:</span>
+          </p>
           <ul>
             <li>Linux administration, server configuration & management</li>
             <li>Container composition for reusable development environments</li>
