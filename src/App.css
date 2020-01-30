@@ -1,38 +1,20 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+
+body {
+  font-family: 'Alata', sans-serif;
+  background: rgb(163, 163, 163);
+  background: linear-gradient(90deg, rgba(163, 163, 163, 1) 0%, rgba(165, 204, 255, 1) 77%, rgba(135, 179, 255, 1) 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  font-family: 'Alata', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.muli {
+  font-family: 'Muli', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.alata {
+  font-family: 'Alata', sans-serif;
 }
