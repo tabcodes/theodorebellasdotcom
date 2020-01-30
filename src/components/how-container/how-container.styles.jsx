@@ -19,10 +19,20 @@ export const HowDesc = styled.div`
   }
 
   div.icon-set {
-      * {
-          margin-left: 15px; 
-
-      }
+    * {
+      margin-left: 15px;
+    }
   }
 
+  ul {
+    list-style-type: "\\2014";
+
+    li {
+      margin-top: 10px;
+      :before {
+        margin: 5px;
+        content: "";
+      }
+    }
+  }
 `;
