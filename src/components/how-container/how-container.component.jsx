@@ -1,9 +1,49 @@
 import React, { Component } from "react";
 import { HowDesc } from "./how-container.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fab, faJsSquare, faPhp, faHtml5, faCss3Alt, faLaravel, faDocker, faPython, faGitlab } from "@fortawesome/free-brands-svg-icons";
+import { faReact, faPhp, faHtml5, faCss3Alt, faLaravel, faDocker, faPython, faGitlab, faVuejs } from "@fortawesome/free-brands-svg-icons";
+import LangItem from "../lang-item/lang-item.component";
 
 class HowContainer extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      languages: [
+        {
+          name: "PHP",
+          icon: faPhp,
+          description: "My general swiss-army knife language for web development."
+        },
+        {
+          name: "Laravel / Lumen",
+          icon: faLaravel,
+        },
+        {
+          name: "React / Redux",
+          icon: faReact,
+        },
+        {
+          name: "Vue.JS",
+          icon: faVuejs,
+        },
+        {
+          name: "Python",
+          icon: faPython,
+        },
+        {
+          name: "Docker",
+          icon: faDocker,
+        },
+        {
+          name: "GitLab",
+          icon: faGitlab,
+        },
+        
+      ]
+    }
+  }
+
   render() {
     return (
       <div className="how-container">
@@ -15,14 +55,7 @@ class HowContainer extends Component {
             </span>
           </p>
           <div className="icon-set">
-            <FontAwesomeIcon icon={faPhp} size="3x" color="#2a2c41" fixedWidth /> 
-            <FontAwesomeIcon icon={faLaravel} size="3x" color="#2a2c41" fixedWidth />
-            <FontAwesomeIcon icon={faJsSquare} size="3x" color="#20272F" fixedWidth/>
-            <FontAwesomeIcon icon={faPython} size="3x" color="#2a2c41" fixedWidth/>
-            <FontAwesomeIcon icon={faHtml5} size="3x" color="#028192" fixedWidth />
-            <FontAwesomeIcon icon={faCss3Alt} size="3x" color="#2a2c41" fixedWidth/>
-            <FontAwesomeIcon icon={faDocker} size="3x" color="#2a2c41" fixedWidth/>
-            <FontAwesomeIcon icon={faGitlab} size="3x" color="#2a2c41" fixedWidth/>
+            {this.state.languages.map(language => <LangItem language={language} />)}
           </div>
 
           <p>
