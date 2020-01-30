@@ -1,0 +1,18 @@
+.desc-item {
+    opacity: 60%;
+    color: black;
+    transition: all 1s;
+    content: "nooo";
+
+    &:hover {
+        opacity: 100%;
+        color: #b96e6e;
+        cursor: pointer;
+    }
+
+    &.clicked {
+        color: #b96e6e;
+        opacity: 100%;
+    }
+
+}        
