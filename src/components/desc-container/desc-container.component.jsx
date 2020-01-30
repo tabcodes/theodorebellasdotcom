@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { DescriptionBox, DescMessage } from "./desc-container.styles";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee, faCode, faServer } from "@fortawesome/free-solid-svg-icons";
 import DescItem from "../desc-item/desc-item.component";
 import { HeadlineContainer } from "../headline-container/headline-container.component";
@@ -10,7 +9,7 @@ class DescriptionContainer extends Component {
     super(props, context);
     this.state = {
       // clickedIndex: -1,
-      clickedIndex: -1,
+      clickedIndex: 0,
       descriptions: [
         {
           clickText: "write code",
@@ -52,7 +51,7 @@ class DescriptionContainer extends Component {
   componentDidMount() {
     this.interval = setInterval(
       () => this.setSelection(this.state.clickedIndex + 1),
-      5000
+      3500
     );
   }
 

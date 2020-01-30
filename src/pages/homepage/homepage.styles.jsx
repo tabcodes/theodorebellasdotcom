@@ -12,4 +12,7 @@ export const Greeting = styled.p`
   &.who::before {
     content: "Who?"
   }
+  &.how::before {
+    content: "How?"
+  }
 `;
