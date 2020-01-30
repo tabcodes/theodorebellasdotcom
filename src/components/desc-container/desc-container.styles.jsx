@@ -7,9 +7,11 @@ export const DescriptionBox = styled.div`
   width: 85%;
 
   .desc-item {
+    font-family: "PT Mono";
+    font-size:25px;
     opacity: 60%;
     color: black;
-    transition: all 1s;
+    transition: all 500ms;
     &:hover {
       opacity: 100%;
       color: #b96e6e;

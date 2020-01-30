@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,700,800&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alata|PT+Mono&display=swap');
 
 body {
   font-family: 'Alata', sans-serif;
@@ -11,10 +10,11 @@ button {
   font-family: 'Alata', sans-serif;
 }
 
-.muli {
-  font-family: 'Muli', sans-serif;
-}
 
 .alata {
   font-family: 'Alata', sans-serif;
+}
+
+.mono {
+  font-family: "PT Mono";
 }

@@ -33,7 +33,8 @@ class DescriptionContainer extends Component {
             {index < 2 ? " || " : ""}
           </span>
         ))}{" "}
-        ).*<DescFooter></DescFooter>
+        ).*
+        <DescFooter></DescFooter>
       </DescriptionBox>
     );
   }
