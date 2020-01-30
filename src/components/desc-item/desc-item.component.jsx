@@ -2,7 +2,7 @@ import React from "react";
 
 const DescItem = ({ onClick, active, children }) => (
   <span className={`${active ? 'clicked' : ''} desc-item`} onClick={onClick}>
-    {children}
+    ({children})
   </span>
 );
 

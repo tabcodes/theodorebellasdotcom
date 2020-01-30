@@ -29,7 +29,7 @@ export const DescriptionBox = styled.div`
 `;
 
 
-export const DescFooter = styled.p`
+export const DescMessage = styled.p`
   font-size: 20px;
 
   ::after {
