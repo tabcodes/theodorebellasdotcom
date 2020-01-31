@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Greeting } from "../homepage/homepage.styles";
+import { Greeting } from "../home-page/home-page.styles";
 
 const ContactPage = () => {
   return (

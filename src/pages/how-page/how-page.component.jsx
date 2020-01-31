@@ -1,10 +1,12 @@
 import React from 'react';
-import { Greeting } from '../homepage/homepage.styles';
 import HowContainer from '../../components/how-container/how-container.component';
+import Greeting from '../../components/greeting/greeting.component';
+
+
 const WhoPage = () => {
     return (
         <div className="how-container">
-            <Greeting className="how" />
+            <Greeting>How?</Greeting>
             <HowContainer />
         </div>
     );
