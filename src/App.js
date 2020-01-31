@@ -2,11 +2,11 @@ import React from "react";
 import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import Header from "./components/header/header.component";
-import HomePage from "./pages/homepage/homepage.component";
-import WhoPage from "./pages/whopage/whopage.component";
-import HowPage from "./pages/howpage/howpage.component";
+import HomePage from "./pages/home-page/home-page.component";
+import WhoPage from "./pages/who-page/who-page.component";
+import HowPage from "./pages/how-page/how-page.component";
 import Footer from "./components/footer/footer.component";
-import ContactPage from "./pages/contactpage/contactpage.component";
+import ContactPage from "./pages/contact-page/contact-page.component";
 
 function App() {
   return (
