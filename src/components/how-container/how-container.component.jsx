@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import { HowDesc } from "./how-container.styles";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact, faPhp, faHtml5, faCss3Alt, faLaravel, faDocker, faPython, faGitlab, faVuejs } from "@fortawesome/free-brands-svg-icons";
 import LangItem from "../lang-item/lang-item.component";
 
 class HowContainer extends Component {
@@ -12,32 +10,32 @@ class HowContainer extends Component {
       languages: [
         {
           name: "PHP",
-          icon: faPhp,
+          icon: '',
           description: "My general swiss-army knife language for web development."
         },
         {
           name: "Laravel / Lumen",
-          icon: faLaravel,
+          icon: '',
         },
         {
           name: "React / Redux",
-          icon: faReact,
+          icon: '',
         },
         {
           name: "Vue.JS",
-          icon: faVuejs,
+          icon: '',
         },
         {
           name: "Python",
-          icon: faPython,
+          icon: '',
         },
         {
           name: "Docker",
-          icon: faDocker,
+          icon: '',
         },
         {
           name: "GitLab",
-          icon: faGitlab,
+          icon: '',
         },
         
       ]

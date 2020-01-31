@@ -3,12 +3,13 @@ import styled from "styled-components";
 export const HeadlineBox = styled.div`
   margin-left: 10%;
 
-  .icon {
-    margin-right: 15px;
-  }
-
   .mono {
     padding: 10px;
+  }
+
+  span.header::before {
+    content: "\\21d2";
+    margin-right: 15px;
   }
 
   p {

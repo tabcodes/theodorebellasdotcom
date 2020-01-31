@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { DescriptionBox, DescMessage } from "./desc-container.styles";
-import { faCoffee, faCode, faServer } from "@fortawesome/free-solid-svg-icons";
 import DescItem from "../desc-item/desc-item.component";
 import { HeadlineContainer } from "../headline-container/headline-container.component";
 
@@ -16,21 +15,21 @@ class DescriptionContainer extends Component {
           header: "clean, consistent, reliable.",
           description:
             "maintainable code written for maximum extensibility and reusability.",
-          icon: faCode
+          icon: ''
         },
         {
           clickText: "develop software",
           header:
             "from <span class='mono'>init</span> to <span class='mono'>commit</span>.",
           description: "fully-featured software solutions for every occasion.",
-          icon: faCoffee
+          icon: ''
         },
         {
           clickText: "deliver highly-scalable technical solutions",
           header: "downtime? what downtime?",
           description:
             "fault-tolerant applications that scale with your organization.",
-          icon: faServer
+          icon: ''
         }
       ]
     };
