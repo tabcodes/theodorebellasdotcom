@@ -1,11 +1,10 @@
 import React from "react";
-
-import { Greeting } from "../home-page/home-page.styles";
+import Greeting from "../../components/greeting/greeting.component";
 
 const ContactPage = () => {
   return (
     <div>
-      <Greeting className="contact" />
+      <Greeting>Contact</Greeting>
 
       <p style={{ marginLeft: "15%", fontSize: "25px" }}>
         You can contact me via email at{" "}
