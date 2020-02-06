@@ -34,7 +34,12 @@ export const HowDesc = styled.div`
 
       a {
         color: black;
+        transition: color 500ms;
+        &:hover {
+          color:#006ac7
+        }
       }
+
     }
   }
 `;

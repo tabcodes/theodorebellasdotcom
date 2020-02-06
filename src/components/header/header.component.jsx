@@ -10,6 +10,10 @@ import {
   NavigationLink
 } from "./header.styles";
 
+const ActiveLinkStyle = {
+  opacity: ".7",
+}
+
 const Header = () => {
   return (
     <HeaderContainer>
@@ -21,9 +25,9 @@ const Header = () => {
         </NameTextContainer>
       </LogoContainer>
       <NavigationContainer>
-        <NavigationLink to="/who">Who?</NavigationLink>
-        <NavigationLink to="/how">How?</NavigationLink>
-        <NavigationLink to="/contact">Contact</NavigationLink>
+        <NavigationLink activeStyle={ActiveLinkStyle} to="/who">Who?</NavigationLink>
+        <NavigationLink activeStyle={ActiveLinkStyle} to="/how">How?</NavigationLink>
+        <NavigationLink activeStyle={ActiveLinkStyle} to="/contact">Contact</NavigationLink>
       </NavigationContainer>
     </HeaderContainer>
   );
