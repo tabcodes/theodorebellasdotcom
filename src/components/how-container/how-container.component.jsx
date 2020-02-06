@@ -1,75 +1,84 @@
 import React, { Component } from "react";
 import { HowDesc } from "./how-container.styles";
-import LangItem from "../lang-item/lang-item.component";
+import SkillsContainer from "../skills-container/skills-container.component";
 
 class HowContainer extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      languages: [
+      skills: [
         {
           name: "PHP",
-          icon: '',
-          description: "My general swiss-army knife language for web development."
+          icon: "devicon-php-plain colored"
         },
         {
           name: "Laravel / Lumen",
-          icon: '',
+          icon: "devicon-laravel-plain-wordmark colored"
         },
         {
           name: "React / Redux",
-          icon: '',
+          icon: "devicon-react-plain-wordmark colored"
         },
         {
-          name: "Vue.JS",
-          icon: '',
+          name: "Vue.js",
+          icon: "devicon-vuejs-plain-wordmark colored"
+        },
+        {
+          name: "jQuery",
+          icon: "devicon-jquery-plain-wordmark colored"
         },
         {
           name: "Python",
-          icon: '',
+          icon: "devicon-python-plain-wordmark colored"
+        },
+        {
+          name: "C",
+          icon: "devicon-c-plain-wordmark colored"
+        },
+        {
+          name: "NGINX",
+          icon: "devicon-nginx-original colored"
+        },
+        {
+          name: "MySQL",
+          icon: "devicon-mysql-plain-wordmark colored"
         },
         {
           name: "Docker",
-          icon: '',
+          icon: "devicon-docker-plain-wordmark colored"
         },
         {
           name: "GitLab",
-          icon: '',
-        },
-        
+          icon: "devicon-gitlab-plain-wordmark colored"
+        }
       ]
-    }
+    };
   }
 
   render() {
     return (
-      <div className="how-container">
-        <HowDesc>
-          <p>
-            <span>
-              I use a variety of frameworks, languages, and other tools,
-              including:{" "}
-            </span>
-          </p>
-          <div className="icon-set">
-            {this.state.languages.map(language => <LangItem language={language} />)}
-          </div>
+      <HowDesc>
+        <p>
+          <span>
+            I use a variety of frameworks, languages, and other tools,
+            including:{" "}
+          </span>
+          <SkillsContainer skills={this.state.skills} />
+        </p>
 
-          <p>
-            <span>My development environment consists of:</span>
-          </p>
-          <ul>
-            <li>Linux Mint (19.x)</li>
-            <li>Visual Studio Code (and a multitude of extensions)</li>
-            <li>
-              <span className="mono">zsh</span> (and{" "}
-              <span className="mono">oh-my-zsh</span>)
-            </li>
-            <li>Vagrant and/or Docker</li>
-          </ul>
-        </HowDesc>
-      </div>
+        <p>
+          <span>Some other things I use:</span>
+        </p>
+        <ul>
+          <li>Linux Mint (19.x)</li>
+          <li>Vagrant, Docker</li>
+          <li>Visual Studio Code (and some of <a href="https://github.com/viatsko/awesome-vscode" target="_new">these</a> extensions)</li>
+          <li>
+            <a className="mono" target='_blank' href="https://ohmyz.sh/">oh-my-zsh</a>
+          </li>
+        </ul>
+      </HowDesc>
     );
   }
 }
