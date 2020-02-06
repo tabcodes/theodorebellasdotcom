@@ -11,7 +11,7 @@ import {
 } from "./header.styles";
 
 const ActiveLinkStyle = {
-  opacity: ".7",
+  color: "DarkSlateGray"
 }
 
 const Header = () => {
