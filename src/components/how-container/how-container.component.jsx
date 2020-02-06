@@ -72,7 +72,7 @@ class HowContainer extends Component {
         </p>
         <ul>
           <li>Linux Mint (19.x)</li>
-          <li>Vagrant, Docker</li>
+          <li>Vagrant, Yarn, Gulp, Elixir</li>
           <li>Visual Studio Code (and some of <a href="https://github.com/viatsko/awesome-vscode" target="_new">these</a> extensions)</li>
           <li>
             <a className="mono" target='_blank' href="https://ohmyz.sh/">oh-my-zsh</a>
